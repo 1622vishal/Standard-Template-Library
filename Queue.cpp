@@ -2,7 +2,7 @@
 /*----Date :- 16-10-23----*/
 
 /*Program to illustrate working of Queue and functions associated with them*/
-/*Most of the working of queue is similar to stack except that it follows LIFO principle i.e., element is inserted 
+/*Most of the working of queue is similar to stack except that it follows FIFO principle i.e., element is inserted 
 in the last and deleted from first*/
 
 #include<iostream>
