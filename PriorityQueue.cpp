@@ -12,7 +12,7 @@ int main()
 {
     priority_queue<int> pq;   //-->this line is equivalent to <int , vector<int> , std::less<int>>
     vector<int> vv = {3,6,2,9,6,5,1,0,8};
-    for(auto i : vv)      //Another way to traverse array or vector. Note:- We can also use int inplace of auto
+    for(auto i : vv)   //It is called foreach loop   //Another way to traverse array or vector. Note:- We can also use int inplace of auto
     {
         cout<<i<<" ";
         pq.push(i);
