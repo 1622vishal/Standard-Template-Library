@@ -21,6 +21,21 @@ int main()
     /****************************************************************************************************************/
 
     //Vectors
+    vector<int> v1(5);     //Declares a vector of size 5 and all elements = 0
+    for(auto x : v1)
+        cout<<x<<" ";
+    cout<<endl;
+
+    vector<int> v2(5,99);       //All 5 elements are 99 
+    for(auto x : v2)
+        cout<<x<<" ";
+    cout<<endl;
+    //Copying one vector to other
+    v2 = v1;         //Using overloaded assignment operator
+    vector<int> v3(v2);      //Using constructor format and it' same as vector<int> v3 = v2;
+    //Rest other things we have already discussed in Vectors.cpp
+
+    /****************************************************************************************************************/
     
 
     return 0;
