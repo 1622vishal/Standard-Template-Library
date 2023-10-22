@@ -36,7 +36,24 @@ int main()
     //Rest other things we have already discussed in Vectors.cpp
 
     /****************************************************************************************************************/
+    //Stack       
+    //Queue
+    //Deque
+    //Priority Queue
+    //Set
+    //Multiset      ---Discussed previously (Discussed nothing new)
+    //Unordered Set  (upper_bound() and lowe_bound() does not works)
+
+    //Map
+    map<int , string> mp;
+    mp[3] = "Hello ";
+    mp[5] = "World";
+    cout<<mp[3]<<" "<<mp[5]<<endl;     //We can print values using keys (other things are discussed in Map.cpp)
+    //Multimap      ---Same as map (discussed previously)
+
+    /***************************************************************************************************************/
     
+
 
     return 0;
 }
