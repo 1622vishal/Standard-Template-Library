@@ -6,6 +6,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Comparator function (line 74)
+bool comp1(pair<int,int> p1 , pair<int,int> p2)
+{
+    if(p1.second < p2.second) return true;
+    if(p1.second > p2.second) return false;
+    return true;
+}
+
 int main()
 {
     //Pairs
@@ -53,7 +61,43 @@ int main()
 
     /***************************************************************************************************************/
     
+    //Agorithms and Builtin functions
 
+    vector<int> v = {4,6,2,8,1,76,43,98,21,9};
+    sort(v.begin() , v.end());
+    for(auto x : v)
+        cout<<x<<" ";
+    cout<<endl;
+    //sort(v.begin() , v.end() , std::greater<int>);    This line is showing error
+
+    //Now what if we want to sort the elements according to ourselves
+    vector<pair<int,int>> vp = {{32,56} , {87,43} , {21,44} , {49,92} , {99,11} , {12,72}};
+    sort(vp.begin() , vp.end() , comp1);
+    cout<<"Sorted vector according to second element of pair :-"<<endl;
+    for(auto x1 : vp)
+        cout<<"{"<<x1.first<<" , "<<x1.second<<"} ";
+    cout<<endl;
+
+    //Returning the number of set bits
+    int num = 34;
+    int count = __builtin_popcount(num);   //It returns the number of set bits (i.e., 1)
+    cout<<"Set Bits :- "<<count<<endl;     
+
+    //Next permutations
+    string ss = "2134";
+    do
+    {
+        cout<<ss<<" ";
+    } while (next_permutation(ss.begin() , ss.end()));
+    cout<<endl;
+
+    //Printing maximum element from an vector (array)
+    int maxx = *max_element(v.begin() , v.end());
+    int minn = *min_element(v.begin() , v.end());
+    cout<<"Max element is :- "<<maxx<<endl;    
+    cout<<"Min element is :- "<<minn<<endl;
+
+    /***************************************************************************************************************/
 
     return 0;
 }
